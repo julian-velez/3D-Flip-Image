@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black
+  }
+  
+  .gallery {
+    display: flex;
+  }
+  
+  .image {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    animation: moveLeftToRight 4s infinite alternate;
+  }
+  
+  @keyframes moveLeftToRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(150px); /* Adjust the value for the desired distance of movement */
+    }
+  }
+  
